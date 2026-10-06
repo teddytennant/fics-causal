@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fics"
+version = "0.1.0"
+description = "Fisher Information Completion Search (arXiv:2610.04291)"
+requires-python = ">=3.10"
+dependencies = ["jax", "numpy", "pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
